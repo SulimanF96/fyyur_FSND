@@ -165,7 +165,7 @@ source env/Scripts/activate
 ```
 
 4. **Install the dependencies:**
-```
+``
 pip install -r requirements.txt
 ```
 

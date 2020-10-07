@@ -116,6 +116,12 @@ class VenueForm(Form):
     facebook_link = StringField(
         'facebook_link', validators=[URL()]
     )
+    website =  StringField(
+        'website'
+    )
+    seeking_description =  StringField(
+        'seeking_description'
+    )
 
 class ArtistForm(Form):
     name = StringField(
@@ -215,6 +221,12 @@ class ArtistForm(Form):
     facebook_link = StringField(
         # TODO implement enum restriction
         'facebook_link', validators=[URL()]
+    )
+    website = StringField(
+        'name', validators=[DataRequired()]
+    )
+    seeking_description = StringField(
+        'name', validators=[DataRequired()]
     )
 
 # TODO IMPLEMENT NEW ARTIST FORM AND NEW SHOW FORM
